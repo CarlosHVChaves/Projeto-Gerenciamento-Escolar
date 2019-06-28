@@ -17,7 +17,7 @@ import static util.Formata.carregaStatusNotaFinal;
 
 /**
  *
- * @author Daniel
+ * @author CarlosHVChaves
  */
 public class TelaCadastroDeNota extends javax.swing.JInternalFrame {
 

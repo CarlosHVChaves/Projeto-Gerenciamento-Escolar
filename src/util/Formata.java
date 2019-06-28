@@ -15,7 +15,7 @@ import model.Funcionario;
 
 /**
  *
- * @author linux
+ * @author CarlosHVChaves
  */
 public class Formata {
 

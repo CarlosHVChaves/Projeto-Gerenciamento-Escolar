@@ -24,7 +24,7 @@ import static util.Formata.retornarCargo;
 
 /**
  *
- * @author Henrique Vieira
+ * @author CarlosHVChaves
  */
 public class TelaCadastroDeFuncionario extends javax.swing.JInternalFrame {
 

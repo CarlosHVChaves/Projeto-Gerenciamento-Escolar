@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author LL
+ * @author CarlosHVChaves
  */
 public class Curso {
 

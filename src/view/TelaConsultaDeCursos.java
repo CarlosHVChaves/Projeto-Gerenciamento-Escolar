@@ -9,7 +9,7 @@ import java.awt.Dimension;
 
 /**
  *
- * @author carlos.chaves
+ * @author CarlosHVChaves
  */
 public class TelaConsultaDeCursos extends javax.swing.JInternalFrame {
 

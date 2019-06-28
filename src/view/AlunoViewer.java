@@ -21,37 +21,42 @@ import javax.persistence.Transient;
 
 /**
  *
- * @author carlos.chaves
+ * @author CarlosHVChaves
  */
 @Entity
-@Table(name = "funcionario", catalog = "gerenciamento_escolar", schema = "")
+@Table(name = "aluno", catalog = "gerenciamento_escolar", schema = "")
 @NamedQueries({
-    @NamedQuery(name = "Funcionario.findAll", query = "SELECT f FROM Funcionario f")
-    , @NamedQuery(name = "Funcionario.findById", query = "SELECT f FROM Funcionario f WHERE f.id = :id")
-    , @NamedQuery(name = "Funcionario.findByNome", query = "SELECT f FROM Funcionario f WHERE f.nome = :nome")
-    , @NamedQuery(name = "Funcionario.findByDtCadastro", query = "SELECT f FROM Funcionario f WHERE f.dtCadastro = :dtCadastro")
-    , @NamedQuery(name = "Funcionario.findByTelefone", query = "SELECT f FROM Funcionario f WHERE f.telefone = :telefone")
-    , @NamedQuery(name = "Funcionario.findByCelular", query = "SELECT f FROM Funcionario f WHERE f.celular = :celular")
-    , @NamedQuery(name = "Funcionario.findByEmail", query = "SELECT f FROM Funcionario f WHERE f.email = :email")
-    , @NamedQuery(name = "Funcionario.findByCep", query = "SELECT f FROM Funcionario f WHERE f.cep = :cep")
-    , @NamedQuery(name = "Funcionario.findByLogradouro", query = "SELECT f FROM Funcionario f WHERE f.logradouro = :logradouro")
-    , @NamedQuery(name = "Funcionario.findByNumeroLogradouro", query = "SELECT f FROM Funcionario f WHERE f.numeroLogradouro = :numeroLogradouro")
-    , @NamedQuery(name = "Funcionario.findByComplemento", query = "SELECT f FROM Funcionario f WHERE f.complemento = :complemento")
-    , @NamedQuery(name = "Funcionario.findByBairro", query = "SELECT f FROM Funcionario f WHERE f.bairro = :bairro")
-    , @NamedQuery(name = "Funcionario.findByCidade", query = "SELECT f FROM Funcionario f WHERE f.cidade = :cidade")
-    , @NamedQuery(name = "Funcionario.findByUfEndereco", query = "SELECT f FROM Funcionario f WHERE f.ufEndereco = :ufEndereco")
-    , @NamedQuery(name = "Funcionario.findByDtNascimento", query = "SELECT f FROM Funcionario f WHERE f.dtNascimento = :dtNascimento")
-    , @NamedQuery(name = "Funcionario.findByNaturalidade", query = "SELECT f FROM Funcionario f WHERE f.naturalidade = :naturalidade")
-    , @NamedQuery(name = "Funcionario.findByEstadoCivil", query = "SELECT f FROM Funcionario f WHERE f.estadoCivil = :estadoCivil")
-    , @NamedQuery(name = "Funcionario.findByCpf", query = "SELECT f FROM Funcionario f WHERE f.cpf = :cpf")
-    , @NamedQuery(name = "Funcionario.findByRg", query = "SELECT f FROM Funcionario f WHERE f.rg = :rg")
-    , @NamedQuery(name = "Funcionario.findByUfRg", query = "SELECT f FROM Funcionario f WHERE f.ufRg = :ufRg")
-    , @NamedQuery(name = "Funcionario.findBySexo", query = "SELECT f FROM Funcionario f WHERE f.sexo = :sexo")
-    , @NamedQuery(name = "Funcionario.findByNomeMae", query = "SELECT f FROM Funcionario f WHERE f.nomeMae = :nomeMae")
-    , @NamedQuery(name = "Funcionario.findByNomePai", query = "SELECT f FROM Funcionario f WHERE f.nomePai = :nomePai")
-    , @NamedQuery(name = "Funcionario.findByFormacao", query = "SELECT f FROM Funcionario f WHERE f.formacao = :formacao")
-    , @NamedQuery(name = "Funcionario.findByCargo", query = "SELECT f FROM Funcionario f WHERE f.cargo = :cargo")})
-public class Funcionario implements Serializable {
+    @NamedQuery(name = "Aluno.findAll", query = "SELECT a FROM Aluno a")
+    , @NamedQuery(name = "Aluno.findById", query = "SELECT a FROM Aluno a WHERE a.id = :id")
+    , @NamedQuery(name = "Aluno.findByNome", query = "SELECT a FROM Aluno a WHERE a.nome = :nome")
+    , @NamedQuery(name = "Aluno.findByDtCadastro", query = "SELECT a FROM Aluno a WHERE a.dtCadastro = :dtCadastro")
+    , @NamedQuery(name = "Aluno.findByTelefone", query = "SELECT a FROM Aluno a WHERE a.telefone = :telefone")
+    , @NamedQuery(name = "Aluno.findByCelular", query = "SELECT a FROM Aluno a WHERE a.celular = :celular")
+    , @NamedQuery(name = "Aluno.findByEmail", query = "SELECT a FROM Aluno a WHERE a.email = :email")
+    , @NamedQuery(name = "Aluno.findByCep", query = "SELECT a FROM Aluno a WHERE a.cep = :cep")
+    , @NamedQuery(name = "Aluno.findByLogradouro", query = "SELECT a FROM Aluno a WHERE a.logradouro = :logradouro")
+    , @NamedQuery(name = "Aluno.findByNumeroLogradouro", query = "SELECT a FROM Aluno a WHERE a.numeroLogradouro = :numeroLogradouro")
+    , @NamedQuery(name = "Aluno.findByComplemento", query = "SELECT a FROM Aluno a WHERE a.complemento = :complemento")
+    , @NamedQuery(name = "Aluno.findByBairro", query = "SELECT a FROM Aluno a WHERE a.bairro = :bairro")
+    , @NamedQuery(name = "Aluno.findByCidade", query = "SELECT a FROM Aluno a WHERE a.cidade = :cidade")
+    , @NamedQuery(name = "Aluno.findByUfEndereco", query = "SELECT a FROM Aluno a WHERE a.ufEndereco = :ufEndereco")
+    , @NamedQuery(name = "Aluno.findByDtNascimento", query = "SELECT a FROM Aluno a WHERE a.dtNascimento = :dtNascimento")
+    , @NamedQuery(name = "Aluno.findByNaturalidade", query = "SELECT a FROM Aluno a WHERE a.naturalidade = :naturalidade")
+    , @NamedQuery(name = "Aluno.findByEstadoCivil", query = "SELECT a FROM Aluno a WHERE a.estadoCivil = :estadoCivil")
+    , @NamedQuery(name = "Aluno.findByProfissao", query = "SELECT a FROM Aluno a WHERE a.profissao = :profissao")
+    , @NamedQuery(name = "Aluno.findByCpf", query = "SELECT a FROM Aluno a WHERE a.cpf = :cpf")
+    , @NamedQuery(name = "Aluno.findByRg", query = "SELECT a FROM Aluno a WHERE a.rg = :rg")
+    , @NamedQuery(name = "Aluno.findByUfRg", query = "SELECT a FROM Aluno a WHERE a.ufRg = :ufRg")
+    , @NamedQuery(name = "Aluno.findBySexo", query = "SELECT a FROM Aluno a WHERE a.sexo = :sexo")
+    , @NamedQuery(name = "Aluno.findByNomeMae", query = "SELECT a FROM Aluno a WHERE a.nomeMae = :nomeMae")
+    , @NamedQuery(name = "Aluno.findByNomePai", query = "SELECT a FROM Aluno a WHERE a.nomePai = :nomePai")
+    , @NamedQuery(name = "Aluno.findByFormacao", query = "SELECT a FROM Aluno a WHERE a.formacao = :formacao")
+    , @NamedQuery(name = "Aluno.findByNomeResponsavel", query = "SELECT a FROM Aluno a WHERE a.nomeResponsavel = :nomeResponsavel")
+    , @NamedQuery(name = "Aluno.findByCpfResponsavel", query = "SELECT a FROM Aluno a WHERE a.cpfResponsavel = :cpfResponsavel")
+    , @NamedQuery(name = "Aluno.findByRgResponsavel", query = "SELECT a FROM Aluno a WHERE a.rgResponsavel = :rgResponsavel")
+    , @NamedQuery(name = "Aluno.findByUfRgResponsavel", query = "SELECT a FROM Aluno a WHERE a.ufRgResponsavel = :ufRgResponsavel")
+    , @NamedQuery(name = "Aluno.findByDtNascimentoResponsavel", query = "SELECT a FROM Aluno a WHERE a.dtNascimentoResponsavel = :dtNascimentoResponsavel")})
+public class AlunoViewer implements Serializable {
 
     @Transient
     private PropertyChangeSupport changeSupport = new PropertyChangeSupport(this);
@@ -92,6 +97,8 @@ public class Funcionario implements Serializable {
     private String naturalidade;
     @Column(name = "estado_civil")
     private String estadoCivil;
+    @Column(name = "profissao")
+    private String profissao;
     @Column(name = "cpf")
     private String cpf;
     @Column(name = "rg")
@@ -106,13 +113,21 @@ public class Funcionario implements Serializable {
     private String nomePai;
     @Column(name = "formacao")
     private String formacao;
-    @Column(name = "cargo")
-    private String cargo;
+    @Column(name = "nome_responsavel")
+    private String nomeResponsavel;
+    @Column(name = "cpf_responsavel")
+    private String cpfResponsavel;
+    @Column(name = "rg_responsavel")
+    private String rgResponsavel;
+    @Column(name = "uf_rg_responsavel")
+    private String ufRgResponsavel;
+    @Column(name = "dt_nascimento_responsavel")
+    private String dtNascimentoResponsavel;
 
-    public Funcionario() {
+    public AlunoViewer() {
     }
 
-    public Funcionario(Integer id) {
+    public AlunoViewer(Integer id) {
         this.id = id;
     }
 
@@ -276,6 +291,16 @@ public class Funcionario implements Serializable {
         changeSupport.firePropertyChange("estadoCivil", oldEstadoCivil, estadoCivil);
     }
 
+    public String getProfissao() {
+        return profissao;
+    }
+
+    public void setProfissao(String profissao) {
+        String oldProfissao = this.profissao;
+        this.profissao = profissao;
+        changeSupport.firePropertyChange("profissao", oldProfissao, profissao);
+    }
+
     public String getCpf() {
         return cpf;
     }
@@ -346,14 +371,54 @@ public class Funcionario implements Serializable {
         changeSupport.firePropertyChange("formacao", oldFormacao, formacao);
     }
 
-    public String getCargo() {
-        return cargo;
+    public String getNomeResponsavel() {
+        return nomeResponsavel;
     }
 
-    public void setCargo(String cargo) {
-        String oldCargo = this.cargo;
-        this.cargo = cargo;
-        changeSupport.firePropertyChange("cargo", oldCargo, cargo);
+    public void setNomeResponsavel(String nomeResponsavel) {
+        String oldNomeResponsavel = this.nomeResponsavel;
+        this.nomeResponsavel = nomeResponsavel;
+        changeSupport.firePropertyChange("nomeResponsavel", oldNomeResponsavel, nomeResponsavel);
+    }
+
+    public String getCpfResponsavel() {
+        return cpfResponsavel;
+    }
+
+    public void setCpfResponsavel(String cpfResponsavel) {
+        String oldCpfResponsavel = this.cpfResponsavel;
+        this.cpfResponsavel = cpfResponsavel;
+        changeSupport.firePropertyChange("cpfResponsavel", oldCpfResponsavel, cpfResponsavel);
+    }
+
+    public String getRgResponsavel() {
+        return rgResponsavel;
+    }
+
+    public void setRgResponsavel(String rgResponsavel) {
+        String oldRgResponsavel = this.rgResponsavel;
+        this.rgResponsavel = rgResponsavel;
+        changeSupport.firePropertyChange("rgResponsavel", oldRgResponsavel, rgResponsavel);
+    }
+
+    public String getUfRgResponsavel() {
+        return ufRgResponsavel;
+    }
+
+    public void setUfRgResponsavel(String ufRgResponsavel) {
+        String oldUfRgResponsavel = this.ufRgResponsavel;
+        this.ufRgResponsavel = ufRgResponsavel;
+        changeSupport.firePropertyChange("ufRgResponsavel", oldUfRgResponsavel, ufRgResponsavel);
+    }
+
+    public String getDtNascimentoResponsavel() {
+        return dtNascimentoResponsavel;
+    }
+
+    public void setDtNascimentoResponsavel(String dtNascimentoResponsavel) {
+        String oldDtNascimentoResponsavel = this.dtNascimentoResponsavel;
+        this.dtNascimentoResponsavel = dtNascimentoResponsavel;
+        changeSupport.firePropertyChange("dtNascimentoResponsavel", oldDtNascimentoResponsavel, dtNascimentoResponsavel);
     }
 
     @Override
@@ -366,10 +431,10 @@ public class Funcionario implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Funcionario)) {
+        if (!(object instanceof AlunoViewer)) {
             return false;
         }
-        Funcionario other = (Funcionario) object;
+        AlunoViewer other = (AlunoViewer) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
@@ -378,7 +443,7 @@ public class Funcionario implements Serializable {
 
     @Override
     public String toString() {
-        return "view.Funcionario[ id=" + id + " ]";
+        return "view.Aluno[ id=" + id + " ]";
     }
 
     public void addPropertyChangeListener(PropertyChangeListener listener) {

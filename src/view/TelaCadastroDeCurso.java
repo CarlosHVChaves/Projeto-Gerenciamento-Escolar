@@ -13,7 +13,7 @@ import model.Curso;
 
 /**
  *
- * @author Henrique Vieira
+ * @author CarlosHVChaves
  */
 public class TelaCadastroDeCurso extends javax.swing.JInternalFrame {
 

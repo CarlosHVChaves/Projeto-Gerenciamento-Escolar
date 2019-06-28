@@ -9,7 +9,7 @@ import java.awt.Dimension;
 
 /**
  *
- * @author carlos.chaves
+ * @author CarlosHVChaves
  */
 public class TelaConsultaDeFuncionarios extends javax.swing.JInternalFrame {
 
@@ -80,7 +80,7 @@ public class TelaConsultaDeFuncionarios extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.persistence.EntityManager entityManager;
-    private java.util.List<view.Funcionario> funcionarioList;
+    private java.util.List<view.FuncionarioViewer> funcionarioList;
     private javax.persistence.Query funcionarioQuery;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;

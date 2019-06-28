@@ -21,7 +21,7 @@ import static util.Formata.retornarUf;
 
 /**
  *
- * @author Henrique Vieira
+ * @author CarlosHVChaves
  */
 public class TelaCadastroDeAluno extends javax.swing.JInternalFrame {
 

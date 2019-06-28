@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author Henrique Vieira
+ * @author CarlosHVChaves
  */
 public class Pagamento {
 

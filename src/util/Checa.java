@@ -7,7 +7,7 @@ package util;
 
 /**
  *
- * @author linux
+ * @author CarlosHVChaves
  */
 public class Checa {
     

@@ -21,7 +21,7 @@ import javax.persistence.Transient;
 
 /**
  *
- * @author carlos.chaves
+ * @author CarlosHVChaves
  */
 @Entity
 @Table(name = "curso", catalog = "gerenciamento_escolar", schema = "")
@@ -33,7 +33,7 @@ import javax.persistence.Transient;
     , @NamedQuery(name = "Curso.findByCargaHoraria", query = "SELECT c FROM Curso c WHERE c.cargaHoraria = :cargaHoraria")
     , @NamedQuery(name = "Curso.findByDuracao", query = "SELECT c FROM Curso c WHERE c.duracao = :duracao")
     , @NamedQuery(name = "Curso.findByValor", query = "SELECT c FROM Curso c WHERE c.valor = :valor")})
-public class Curso implements Serializable {
+public class CursoViewer implements Serializable {
 
     @Transient
     private PropertyChangeSupport changeSupport = new PropertyChangeSupport(this);
@@ -56,10 +56,10 @@ public class Curso implements Serializable {
     @Column(name = "valor")
     private Double valor;
 
-    public Curso() {
+    public CursoViewer() {
     }
 
-    public Curso(Integer id) {
+    public CursoViewer(Integer id) {
         this.id = id;
     }
 
@@ -133,10 +133,10 @@ public class Curso implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Curso)) {
+        if (!(object instanceof CursoViewer)) {
             return false;
         }
-        Curso other = (Curso) object;
+        CursoViewer other = (CursoViewer) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }

@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author carlos.chaves
+ * @author CarlosHVChaves
  */
 public abstract class SerHumano {
     private int codigo;

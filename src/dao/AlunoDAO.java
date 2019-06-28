@@ -17,7 +17,7 @@ import model.Aluno;
 
 /**
  *
- * @author carlos.chaves
+ * @author CarlosHVChaves
  */
 public class AlunoDAO implements Persistencia<Aluno> {
 

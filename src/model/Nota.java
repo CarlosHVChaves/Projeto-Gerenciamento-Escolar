@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author Daniel
+ * @author CarlosHVChaves
  */
 public class Nota {
 

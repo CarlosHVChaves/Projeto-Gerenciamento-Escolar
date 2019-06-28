@@ -9,7 +9,7 @@ import static util.Configura.lookAndFeel;
 import view.TelaPrincipal;
 /**
  *
- * @author Henrique Vieira
+ * @author CarlosHVChaves
  */
 public class Principal {
 

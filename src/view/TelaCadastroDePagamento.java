@@ -21,7 +21,7 @@ import static util.Formata.carregaDiaPagamento;
 
 /**
  *
- * @author Daniel
+ * @author CarlosHVChaves
  */
 public class TelaCadastroDePagamento extends javax.swing.JInternalFrame {
 

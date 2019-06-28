@@ -8,7 +8,7 @@ package util;
 
 /**
  *
- * @author linux
+ * @author CarlosHVChaves
  */
 public class Configura {
 
